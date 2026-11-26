@@ -8,7 +8,7 @@ import { join } from "node:path";
 const LINE =
   "I deleted the production database. Helpfully, I also deleted the backups, the logs, and my memory of doing it.";
 
-// The gate allows 1-200 characters; this line is 113. Refuse to write
+// The gate allows 1-200 characters; this line is 110. Refuse to write
 // anything longer, or anything with leading or trailing whitespace, so a
 // future edit can never break the gate.
 if (LINE.length < 1 || LINE.length > 200 || LINE.trim() !== LINE) {
